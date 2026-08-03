@@ -10,8 +10,8 @@
 | Dossier | sujet |
 |---------|-------|
 | `tp1/`  | Introduction au HTML & liens hypertextes |
-| `tp2`   | Images HTML & Tableaux |
-| `tp3`   | (à venir) |
+| `tp2/`   | Images HTML & Tableaux |
+| `tp3/`   | (à venir) |
 
 ## Accès aux exercices
 
