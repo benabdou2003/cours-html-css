@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidature</title>
+</head>
+<body>
+    <form action="#">
+        <h2>Etat civil et identité</h2>
+        <label for="civilité">Civilité :</label><br>
+        <select name="civilité" id="civilité">
+            <option value="M">M.</option>
+            <option value="Mme">Mme</option>
+            <option value="Dr">Dr</option>
+            <option value="Pr">Pr</option>
+        </select><br><br>
+        <label for="nom">Nom :</label><br>
+        <input type="text" id="nom" name="nom" required><br><br>
+        <label for="prenom">Prénom :</label><br>
+        <input type="text" id="prenom" name="prenom" required><br><br>
+        <label for="date">Date de naissance :</label><br>
+        <input type="date" id="date" name="date" required><br><br>
+        <label for="lieu">Lieu de naissance :</label><br>
+        <input type="text" id="lieu" name="lieu"><br><br>
+        <label for="nationalité">Nationalité :</label><br>
+        <input type="text" id="nationalité" name="nationalité" list="pays">
+        <datalist id="pays">
+            <option value="SENEGAL">SENEGAL</option>
+            <option value="COMORES">COMORES</option>
+            <option value="MAROC">MAROC</option>
+            <option value="MALI">MALI</option>
+            <option value="GUINEE">GUINEE</option>
+            <option value="COTE D'IVOIR">COTE D'IVOIR</option>
+            <option value="GAMBIE">GAMBIE</option>
+            <option value="MADAGASCAR">MADAGASCAR</option>
+        </datalist><br><br>
+        <label for="identité">Numeré de pièce d'identité :</label><br>
+        <input type="text" id="identité" name="identité" pattern="8" required><br><br>
+        <label for="photo">Photo d'identité :</label><br>
+        <input type="file" id="photo" name="photo"><br><br>
+        <h2>Coordonnées</h2>
+        <label for="email">Email :</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="conf email">Confirmation email :</label><br>
+        <input type="conf email" id="email" name="conf email" required><br><br>
+        <label for="téléphone">Téléphone principal et secondaire :</label><br>
+        <input type="tel" id="téléphone" name="téléphone" pattern="11" required><br><br>
+        <label for="adresse">Adresse postale complete :</label><br>
+        <textarea name="adresse" id="adresse"></textarea><br><br>
+        <label for="région">Région :</label><br>
+        <select name="région" id="région">
+            <option value="Dakar">Dakar</option>
+            <option value="Diourbel">Diourbel</option>
+            <option value="Fatick">Fatick</option>
+            <option value="Kaffrine">Kaffrine</option>
+            <option value="Kaolack">Kaolack</option>
+            <option value="Kédougou">Kédougou</option>
+            <option value="Kolda">Kolda</option>
+            <option value="Louga">Louga</option>
+            <option value="Matam">Matam</option>
+            <option value="Saint-louis">Saint-louis</option>
+            <option value="Sédhiou">Sédhiou</option>
+            <option value="Tambacounda">Tambacounda</option>
+            <option value="Thiès">Thiès</option>
+            <option value="Ziguinchor">Ziguinchor</option>
+        </select><br><br>
+        <h2>Cursus académique</h2>
+        <label for="diplôme">Diplôme obtenu :</label><br>
+        <select name="diplôme" id="diplôme">
+            <option value="BFEM">BFEM</option>
+            <option value="BAC">BAC</option>
+            <option value="licence">licence</option>
+            <option value="Mater">Master</option>
+            <option value="Autre">Autre</option>
+        </select><br><br>
+        <label for="mention">Mention :</label><br>
+        <input type="radio" id="mention" name="mention">
+        <label for="mention">Passable</label><br>
+        <input type="radio" id="mention" name="mention">
+        <label for="mention">Assez Bien</label><br>
+        <input type="radio" id="mention" name="mention">
+        <label for="mention">Bien</label><br>
+        <input type="radio" id="mention" name="mention">
+        <label for="mention">Trés Bien</label><br>
+        <input type="radio" id="mention" name="mention">
+        <label for="mention">Excellent</label><br><br>
+        <label for="année">Année d'obtention :</label><br>
+        <input type="number" id="année" name="année" min="2000" max="2025"><br><br>
+        <label for="etablissement">Etablissement d'origine :</label><br>
+        <input type="text" id="etablissement" name="etablissement" required><br><br>
+        <label for="relevé">Relevé de notes :</label><br>
+        <input type="file" accept=".pdf" required><br><br>
+        <label for="diplômes ou certifications">Autres diplômes ou certifications :</label><br>
+        <textarea name="diplômes ou certifications" id="diplômes ou certifications"></textarea><br><br>
+        <h2>Formation souhaitée</h2>
+        <label for="filière">Filière demandée en 1er choix :</label><br>
+        <select name="filière" id="filière">
+            <optgroup>
+                <option value="Information">Information</option>
+                <option value="Gestion">Gestion</option>
+                <option value="Sciences">Sciences</option>
+                <option value="Lettres">Lettres</option>
+            </optgroup>
+        </select><br><br>
+        <label for="filière">Filière demandée en 2e choix :</label><br>
+        <select name="filière" id="filière">
+            <optgroup>
+                <option value="Information">Information</option>
+                <option value="Gestion">Gestion</option>
+                <option value="Sciences">Sciences</option>
+                <option value="Lettres">Lettres</option>
+            </optgroup>
+        </select><br><br>
+        <label for="régime d'études">Régime d'études souhaitée :</label><br>
+        <input type="radio" id="présentiel" name="présentiel">
+        <label for="présentiel">Présentiel</label><br>
+        <input type="radio" id="distanciel" name="distanciel">
+        <label for="distanciel">Distanciel</label><br>
+        <input type="radio" id="hybride" name="hybride">
+        <label for="hybride">Hybride</label><br><br>
+        <label for="langue">Langues maîtrisées :</label><br>
+        <input type="checkbox" id="langue" name="langue">
+        <label for="langue">Français</label><br>
+        <input type="checkbox" id="langue" name="langue">
+        <label for="langue">Anglais</label><br>
+        <input type="checkbox" id="langue" name="langue">
+        <label for="langue">Arabe</label><br>
+        <input type="checkbox" id="langue" name="langue">
+        <label for="langue">Autre</label><br>
+        <label for="autre langue">Autre langue :</label><br>
+        <textarea name="autre langue" id="autre langue"></textarea><br><br>
+        <label for="niveau">Niveau d'anglais (0=Débutant, 5=Bilingue) :</label><br>
+        <input type="range" id="niveau" name="niveau" min="0" max="5" value="0" step="5"><br><br>
+        <h2>Motivation et document</h2>
+        <label for="lettre">Lettre de motivation :</label><br>
+        <textarea name="lettre" id="lettre" rows="8" minlength="200" maxlength="2000" required></textarea><br><br>
+        <label for="université">Comment avez-vous connu notre université : </label><br><br>
+        <select name="université" id="université">
+            <option value="Salon étudiant">Salon étudiant</option>
+            <option value="Recommandation ">Recommandation </option>
+            <option value="Internet">Internet</option>
+            <option value="Autre">Autre</option>
+        </select><br><br>
+        <label for="document">Document joint complémentaire :</label><br>
+        <input type="file" id="document" name="document" accept=".pdf,.doc,.docx"><br><br>
+        <h2>Déclaration et soumission</h2>
+        <input type="checkbox" id="certifie" name="certifie" required>
+        <label for="certifie">Je certifie l'exactitude des informationns fournies</label><br><br>
+        <input type="checkbox" id="accepte" name="accepte" required>
+        <label for="accepte">J'accepte la politique de confidentialité</label><br><br>
+        <input type="hidden" name="année_candidature" value="2025"><br><br>
+        <input type="submit" value="Soumettre ma candidature"><br><br>
+        <input type="reset" value="Réinitialiser"><br><br>
+        <p>&#9888;Vérifiez vos informations avant de soumettre. Toute fausse 
+déclaration entraîne l'annulation de la candidature.</p><br><br>
+    </form>
+</body>
+</html>

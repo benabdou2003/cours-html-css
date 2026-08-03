@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le moteur de recherche</title>
+</head>
+<body>
+    <form method="get">
+        <h2><font color="009966">Barre de recherche principale</h2>
+            <input type="search" name="recherche" id="recherche" placeholder="Titre, auteur, mot-clé" required autofocus>
+            <br><br>
+            <input type="submit" value="Recherche">
+            <br><br><br>
+        <h2><font color="009966">Filtres avancés</h2>
+        <fieldset><legend>Affiner la recherche</legend>
+        <p><font color="000000">Type de document:</p>   
+            <input type="checkbox" name="type" id="type" value="Livre">
+            <label for="type">Livre</label><br>
+            <input type="checkbox" name="type" id="type" value="Article">
+            <label for="type">Article</label><br>
+            <input type="checkbox" name="type" id="type" value="Thèse">
+            <label for="type">Thèse</label><br>
+            <input type="checkbox" name="type" id="type" value="Rapport">
+            <label for="type">Rapport</label><br>
+            <input type="checkbox" name="type" id="type" value="Magazine">
+            <label for="type">Magazine</label>
+            <br><br>
+            <label for="domaine">Domaine</label>
+            <select name="domaine" id="domaine">
+                <optgroup label="Science exactes"></optgroup>
+                <optgroup label="Sciences humaines"></optgroup>
+                <optgroup label="Informatique"></optgroup>
+                <optgroup label="Autres"></optgroup>
+            </select>
+            <br><br>
+            <label for="année">Année de publication:</label><br><br>
+            De: <br>
+            <input type="number" name="année" id="année" min="1990" max="2025"><br><br>
+            A: <br>
+            <input type="number" name="année" id="année" min="1990" max="2025"><br><br>
+            <label for="langue">Langue:</label><br>
+            <select name="langue" id="langue" size="4">
+                <option value="français">Français</option>
+                <option value="anglais">Anglais</option>
+                <option value="wolof">Wolof</option>
+            </select>
+            <br><br>
+            <label for="disponibilité">Disponibilité:</label><br>
+            <input type="radio" name="disponibilité" id="disponibilité" value="Tous">
+            <label for="disponibilité">Tous les documents</label><br>
+            <input type="radio" name="disponibilité" id="disponibilité" value="Disponibles">
+            <label for="disponibilité">Disponibles uniquement</label><br><br>
+            <label for="nombre">Nombre de résultats par page:</label><br>
+            <select name="nombre" id="nombre">
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+            </select><br><br>
+            <input type="submit" value="Appliquer les filtres"><br><br>
+            <input type="reset" value="Réinitialiser">
+        </fieldset>
+     </form>
+</body>
+</html>

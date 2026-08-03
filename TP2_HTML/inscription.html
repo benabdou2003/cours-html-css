@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iscription</title>
+</head>
+<body>
+    <form method="post" action="#">
+        <fieldset><legend>Identité</legend>
+            <label for="nom">Nom:</label><br>
+            <input type="text" name="nom" id="nom" required maxlength="50">
+            <br>
+            <br>
+            <label for="prénom">Prénom:</label><br>
+            <input type="text" name="prénom" id="prénom" required maxlength="50">
+            <br>
+            <br>
+            <label for="sexe">Sexe:</label><br>
+            <input type="radio" id="sexe" name="sexe">
+            <label for="sexe">Masculin</label><br>
+            <input type="radio" id="sexe" name="sexe">
+            <label for="sexe">Féminin</label>
+            <br>
+            <br>
+            <label for="nationalité">Nationalité:</label><br>
+            <select name="nationalité" id="nationalité">
+                <option value="senegal">Sénégal</option>
+                <option value="guinee">Guinée</option>
+                <option value="gabon">Gabon</option>
+                <option value="comores">Comores</option>
+                <option value="mauritani">Mauritani</option>
+                <option value="maroc">Maroc</option>
+            </select>
+        </fieldset>
+        <br>
+        <br>
+        <fieldset><legend>Contact</legend>
+             <label for="adresse email">Adresse email:</label><br>
+            <input type="email" name="adresse email" id="adresse email" required>
+            <br>
+            <br>
+             <label for="confirmer email">Confirmer votre email:</label><br>
+            <input type="email" name="confirmer email" id="confirmer email" required>
+            <br>
+            <br>
+             <label for="numero telephone">Numéro de téléphone:</label><br>
+            <input type="tel" name="numero telephone" id="numero telephone" pattern="[0-9]{9}" title="le Numéro doit contenir 9 chiffres" required>
+            <br>
+            <br>
+            <label for="ville">Ville de résidence:</label><br>
+            <input type="text" name="ville" id="ville" list="villes">
+            <datalist id="villes">
+                <option value="Dakar">
+                <option value="Thiés">
+                <option value="Touba">
+                <option value="Kaolack">
+                <option value="Ziguinchor">
+                <option value="Saint-louis">           
+            </datalist>
+        </fieldset>
+        <br>
+        <br>
+        <fieldset><legend>Compte et préférence</legend>
+            <label for="mot de passe">Mot de passe:</label> <br>
+            <input type="password" id="mot de passe" name="Mot de passe:" minlength="8" maxlength="30" required>
+            <br>
+            <br>
+            <label for="confirmer de passe">Mot de passe:</label> <br>
+            <input type="password" id="confirmer de passe" name="confirmer de passe:" minlength="8" maxlength="30 required">
+            <br><br>
+            <p>Langages connus:</p>
+            <input type="checkbox" id="html" name="html">
+            <label for="html">HTML</label><br>
+            <input type="checkbox" id="css" name="css">
+            <label for="css">CSS</label><br>
+            <input type="checkbox" id="javaScipt" name="javaScipt">
+            <label for="javaScipt">JAVASCRIPT</label><br>
+            <input type="checkbox" id="python" name="python">
+            <label for="python">PYTHON</label><br>
+            <input type="checkbox" id="php" name="php">
+            <label for="php">PHP</label>
+            <br><br>
+            <label for="experience">Niveau d'experience:</label><br>
+            <input type="rang" id="experience" name="experience" minlength="0" maxlength="5" value="1">
+            <br><br>
+            <label for="photo">Photo de profil:</label><br>
+            <input type="file" id="photo" name="photo" accept="image/*">
+            <br><br>
+            <label for="bio">Bio courte:</label><br>
+            <textarea name="bio" id="bio" maxlength="300"></textarea>
+            <br><br>
+            <input type="checkbox" id="conditions" name="conditions" required>
+            <label for="conditions">J'accepte les contions d'utilisation</label>
+            <br><br>
+            <input type="submit" value="Créer mon Compte" >
+            <br><br>
+            <input type="reset" value="Effacer">
+        </fieldset>
+
+    </form>
+</body>
+</html>
