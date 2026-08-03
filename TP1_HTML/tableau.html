@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableu</title>
+</head>
+<body>
+     <h4>Exercice 4</h4>
+
+      <table border="3" style="width: 100%; height: 50px" cellspacing="3" cellpadding="6">
+            <tr bgcolor="777777">
+                <th><u>Titre1</u></th>
+                <th><u>Titre2</u></th>
+                <th><u>Titre3</u></th>
+            </tr>
+            <tr>
+                <td>Cellule Simple</td>
+                <td>Cellule Simple</td>
+                <td>Cellule Simple</td>
+            </tr>
+            <tr>
+                <td colspan="2">Deux colonnes assemblées</td>
+                <td>Cellule Simple</td>
+            </tr>
+             <tr>
+                <td>Cellule Simple</td>
+                <td>Cellule Simple</td>
+                <td rowspan="2">Deux lignes assemblées avec alignement verticale en haut</td>
+            </tr>
+            <tr>
+                <td>Cellule Simple</td>
+                <td>Cellule Simple</td>
+            </tr>
+            <tr>
+                <td>Cellule Simple</td>
+                <td colspan="2" rowspan="2">Deux lignes assemblées,Deux colonnes assemblées</td>
+            </tr>
+            <tr>
+                <td>Cellule Simple</td>
+            </tr>
+      </table>
+
+      <h4>Exercice 5</h4>
+      <table table border="1" style="width: 100%; height: 50px;" cellspacing="0" cellpadding="1">
+            <caption><th colspan="7">Plannning des taches par équipe</th></caption> 
+        <table border="3" style="width: 100%; height: 50px" cellspacing="3" cellpadding="6">
+            <tr bgcolor="777777">
+                <th scope="row" rowspan="2">Equipes</th>
+                <th scope="row" colspan="5">Janvier</th>
+                <th rowspan="2">       </th>
+            </tr>
+            <tr bgcolor="777777">
+                <th>Lundi</th>
+                <th>Mardi</th>
+                <th>Mercredi</th>
+                <th>Jeudi</th>
+                <th>Vendredi</th>
+            </tr>
+            <tr>
+                <td bgcolor="777777">Equipe 1</td>
+                <td colspan="3">tache1</td>
+                <td colspan="2">tache2</td>
+                <td rowspan="2">semaine1</td>
+            </tr>
+            <tr>
+                <td bgcolor="777777">Equipe2</td>
+                <td colspan="2">tache1</td>
+                <td colspan="3">tache2</td>
+            </tr>
+            <tr>
+                <td bgcolor="777777">Equipe1</td>
+                <td>tache3</td>
+                <td colspan="3">tache4</td>
+                <td>tache5</td>
+                <td rowspan="2">semaine2</td>
+            </tr>
+            <tr>
+                <td bgcolor="777777">Equipe2</td>
+                <td colspan="2">tache3</td>
+                <td colspan="3">tache4</td>
+            </tr>
+            <tr>
+                <td bgcolor="777777">Equipe1</td>
+                <td colspan="2">tache5</td>
+                <td colspan="3">tache6</td>
+                <td rowspan="2">semaine3</td>
+            </tr>
+            <tr>
+                <td bgcolor="777777">Equipe2</td>
+                <td>tache5</td>
+                <td colspan="4">tache6</td>
+            </tr>
+            <tr>
+                <td bgcolor="777777">Equipe1</td>
+                <td colspan="3">tache7</td>
+                <td colspan="2">tache8</td>
+                <td rowspan="2">semaine4</td>
+            </tr>
+            <tr>
+                <td bgcolor="777777">Equipe2</td>
+                <td colspan="2">tache7</td>
+                <td colspan="3">tache8</td>
+            </tr>
+        </table> 
+      </table>
+
+</body>
+</html>
